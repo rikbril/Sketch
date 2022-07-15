@@ -26,4 +26,11 @@ for (let i = 0; i < boxes; i++) {
     sketchBox.appendChild(box)
 }
 
+const hoover = document.addEventListener("mouseover", hooverEvent)
+function hooverEvent(e) {
+    if (e.target.id) {
+        const box = document.getElementById(e.target.id)
+        box.style.backgroundColor = "green"
+    }
+}
 
