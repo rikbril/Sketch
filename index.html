@@ -8,6 +8,24 @@
     <title>Etch a Sketch</title>
 </head>
 <body>
+    <head>Pixel Sketch</head>
+    <div class="flexbox">
+        <div class="container">
+            <div class="sketchGrid" id="sketchGrid"></div>
+        </div>
+        <ul class="ui">
+            <div id="colorBox">
+                <input type="color" id="colorSelect">
+                <div id="color" >color</div>
+            </div>
+            <button id="ereaser">ereaser</button>
+            <button id="getColor">get color</button>
+            <button id="fillGrid">fill grid</button>
+            <button id="clearGrid">clear grid</button>
+            <input type="range" min="8" max="256" id="pixelsInGrid" onmouseup="populateGrid(this.value)">
+        </ul>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
